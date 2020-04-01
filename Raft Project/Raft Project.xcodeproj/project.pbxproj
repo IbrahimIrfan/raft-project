@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7816D7CA1ECA9F14000DCC21 /* GameStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7816D7C91ECA9F14000DCC21 /* GameStart.swift */; };
+		785FECC01ED20AD400530A8D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785FECBF1ED20AD400530A8D /* Constants.swift */; };
+		785FECC21ED20B1500530A8D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785FECC11ED20B1500530A8D /* Character.swift */; };
+		785FECC41ED2106E00530A8D /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785FECC31ED2106E00530A8D /* GameOver.swift */; };
+		786E2B5E1ED1068300161CE7 /* BallGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E2B5D1ED1068300161CE7 /* BallGenerator.swift */; };
+		786E2B601ED1197800161CE7 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E2B5F1ED1197800161CE7 /* Ball.swift */; };
+		787B223C1EC4DF0500441231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B223B1EC4DF0500441231 /* AppDelegate.swift */; };
+		787B223E1EC4DF0500441231 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 787B223D1EC4DF0500441231 /* GameScene.sks */; };
+		787B22401EC4DF0500441231 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 787B223F1EC4DF0500441231 /* Actions.sks */; };
+		787B22421EC4DF0500441231 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B22411EC4DF0500441231 /* GameScene.swift */; };
+		787B22441EC4DF0500441231 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B22431EC4DF0500441231 /* GameViewController.swift */; };
+		787B22471EC4DF0500441231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787B22451EC4DF0500441231 /* Main.storyboard */; };
+		787B22491EC4DF0500441231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 787B22481EC4DF0500441231 /* Assets.xcassets */; };
+		787B224C1EC4DF0500441231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787B224A1EC4DF0500441231 /* LaunchScreen.storyboard */; };
+		787B22571EC4DF0500441231 /* Raft_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B22561EC4DF0500441231 /* Raft_ProjectTests.swift */; };
+		787B22621EC4DF0500441231 /* Raft_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B22611EC4DF0500441231 /* Raft_ProjectUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		787B22531EC4DF0500441231 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 787B22301EC4DF0500441231 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 787B22371EC4DF0500441231;
+			remoteInfo = "Raft Project";
+		};
+		787B225E1EC4DF0500441231 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 787B22301EC4DF0500441231 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 787B22371EC4DF0500441231;
+			remoteInfo = "Raft Project";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7816D7C91ECA9F14000DCC21 /* GameStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStart.swift; sourceTree = "<group>"; };
+		785FECBF1ED20AD400530A8D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		785FECC11ED20B1500530A8D /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		785FECC31ED2106E00530A8D /* GameOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
+		786E2B5D1ED1068300161CE7 /* BallGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallGenerator.swift; sourceTree = "<group>"; };
+		786E2B5F1ED1197800161CE7 /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
+		787B22381EC4DF0500441231 /* Tragic Heroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tragic Heroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		787B223B1EC4DF0500441231 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		787B223D1EC4DF0500441231 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		787B223F1EC4DF0500441231 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		787B22411EC4DF0500441231 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		787B22431EC4DF0500441231 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		787B22461EC4DF0500441231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		787B22481EC4DF0500441231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		787B224B1EC4DF0500441231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		787B224D1EC4DF0500441231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787B22521EC4DF0500441231 /* Raft ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Raft ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		787B22561EC4DF0500441231 /* Raft_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raft_ProjectTests.swift; sourceTree = "<group>"; };
+		787B22581EC4DF0500441231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787B225D1EC4DF0500441231 /* Raft ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Raft ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		787B22611EC4DF0500441231 /* Raft_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raft_ProjectUITests.swift; sourceTree = "<group>"; };
+		787B22631EC4DF0500441231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		787B22351EC4DF0500441231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787B224F1EC4DF0500441231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787B225A1EC4DF0500441231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		787B222F1EC4DF0500441231 = {
+			isa = PBXGroup;
+			children = (
+				787B223A1EC4DF0500441231 /* Raft Project */,
+				787B22551EC4DF0500441231 /* Raft ProjectTests */,
+				787B22601EC4DF0500441231 /* Raft ProjectUITests */,
+				787B22391EC4DF0500441231 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		787B22391EC4DF0500441231 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				787B22381EC4DF0500441231 /* Tragic Heroes.app */,
+				787B22521EC4DF0500441231 /* Raft ProjectTests.xctest */,
+				787B225D1EC4DF0500441231 /* Raft ProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		787B223A1EC4DF0500441231 /* Raft Project */ = {
+			isa = PBXGroup;
+			children = (
+				787B22411EC4DF0500441231 /* GameScene.swift */,
+				7816D7C91ECA9F14000DCC21 /* GameStart.swift */,
+				785FECC31ED2106E00530A8D /* GameOver.swift */,
+				786E2B5D1ED1068300161CE7 /* BallGenerator.swift */,
+				786E2B5F1ED1197800161CE7 /* Ball.swift */,
+				785FECC11ED20B1500530A8D /* Character.swift */,
+				785FECBF1ED20AD400530A8D /* Constants.swift */,
+				787B22431EC4DF0500441231 /* GameViewController.swift */,
+				787B223B1EC4DF0500441231 /* AppDelegate.swift */,
+				787B223D1EC4DF0500441231 /* GameScene.sks */,
+				787B223F1EC4DF0500441231 /* Actions.sks */,
+				787B22451EC4DF0500441231 /* Main.storyboard */,
+				787B22481EC4DF0500441231 /* Assets.xcassets */,
+				787B224A1EC4DF0500441231 /* LaunchScreen.storyboard */,
+				787B224D1EC4DF0500441231 /* Info.plist */,
+			);
+			path = "Raft Project";
+			sourceTree = "<group>";
+		};
+		787B22551EC4DF0500441231 /* Raft ProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				787B22561EC4DF0500441231 /* Raft_ProjectTests.swift */,
+				787B22581EC4DF0500441231 /* Info.plist */,
+			);
+			path = "Raft ProjectTests";
+			sourceTree = "<group>";
+		};
+		787B22601EC4DF0500441231 /* Raft ProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				787B22611EC4DF0500441231 /* Raft_ProjectUITests.swift */,
+				787B22631EC4DF0500441231 /* Info.plist */,
+			);
+			path = "Raft ProjectUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		787B22371EC4DF0500441231 /* Raft Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 787B22661EC4DF0500441231 /* Build configuration list for PBXNativeTarget "Raft Project" */;
+			buildPhases = (
+				787B22341EC4DF0500441231 /* Sources */,
+				787B22351EC4DF0500441231 /* Frameworks */,
+				787B22361EC4DF0500441231 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Raft Project";
+			productName = "Raft Project";
+			productReference = 787B22381EC4DF0500441231 /* Tragic Heroes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		787B22511EC4DF0500441231 /* Raft ProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 787B22691EC4DF0500441231 /* Build configuration list for PBXNativeTarget "Raft ProjectTests" */;
+			buildPhases = (
+				787B224E1EC4DF0500441231 /* Sources */,
+				787B224F1EC4DF0500441231 /* Frameworks */,
+				787B22501EC4DF0500441231 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				787B22541EC4DF0500441231 /* PBXTargetDependency */,
+			);
+			name = "Raft ProjectTests";
+			productName = "Raft ProjectTests";
+			productReference = 787B22521EC4DF0500441231 /* Raft ProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		787B225C1EC4DF0500441231 /* Raft ProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 787B226C1EC4DF0500441231 /* Build configuration list for PBXNativeTarget "Raft ProjectUITests" */;
+			buildPhases = (
+				787B22591EC4DF0500441231 /* Sources */,
+				787B225A1EC4DF0500441231 /* Frameworks */,
+				787B225B1EC4DF0500441231 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				787B225F1EC4DF0500441231 /* PBXTargetDependency */,
+			);
+			name = "Raft ProjectUITests";
+			productName = "Raft ProjectUITests";
+			productReference = 787B225D1EC4DF0500441231 /* Raft ProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		787B22301EC4DF0500441231 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Ibrahim Irfan";
+				TargetAttributes = {
+					787B22371EC4DF0500441231 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = CE53JYLS64;
+						ProvisioningStyle = Automatic;
+					};
+					787B22511EC4DF0500441231 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = CE53JYLS64;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 787B22371EC4DF0500441231;
+					};
+					787B225C1EC4DF0500441231 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = CE53JYLS64;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 787B22371EC4DF0500441231;
+					};
+				};
+			};
+			buildConfigurationList = 787B22331EC4DF0500441231 /* Build configuration list for PBXProject "Raft Project" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 787B222F1EC4DF0500441231;
+			productRefGroup = 787B22391EC4DF0500441231 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				787B22371EC4DF0500441231 /* Raft Project */,
+				787B22511EC4DF0500441231 /* Raft ProjectTests */,
+				787B225C1EC4DF0500441231 /* Raft ProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		787B22361EC4DF0500441231 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787B22471EC4DF0500441231 /* Main.storyboard in Resources */,
+				787B223E1EC4DF0500441231 /* GameScene.sks in Resources */,
+				787B22491EC4DF0500441231 /* Assets.xcassets in Resources */,
+				787B224C1EC4DF0500441231 /* LaunchScreen.storyboard in Resources */,
+				787B22401EC4DF0500441231 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787B22501EC4DF0500441231 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787B225B1EC4DF0500441231 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		787B22341EC4DF0500441231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				786E2B601ED1197800161CE7 /* Ball.swift in Sources */,
+				787B22421EC4DF0500441231 /* GameScene.swift in Sources */,
+				787B22441EC4DF0500441231 /* GameViewController.swift in Sources */,
+				785FECC41ED2106E00530A8D /* GameOver.swift in Sources */,
+				7816D7CA1ECA9F14000DCC21 /* GameStart.swift in Sources */,
+				785FECC01ED20AD400530A8D /* Constants.swift in Sources */,
+				786E2B5E1ED1068300161CE7 /* BallGenerator.swift in Sources */,
+				787B223C1EC4DF0500441231 /* AppDelegate.swift in Sources */,
+				785FECC21ED20B1500530A8D /* Character.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787B224E1EC4DF0500441231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787B22571EC4DF0500441231 /* Raft_ProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787B22591EC4DF0500441231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787B22621EC4DF0500441231 /* Raft_ProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		787B22541EC4DF0500441231 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 787B22371EC4DF0500441231 /* Raft Project */;
+			targetProxy = 787B22531EC4DF0500441231 /* PBXContainerItemProxy */;
+		};
+		787B225F1EC4DF0500441231 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 787B22371EC4DF0500441231 /* Raft Project */;
+			targetProxy = 787B225E1EC4DF0500441231 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		787B22451EC4DF0500441231 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				787B22461EC4DF0500441231 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		787B224A1EC4DF0500441231 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				787B224B1EC4DF0500441231 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		787B22641EC4DF0500441231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		787B22651EC4DF0500441231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		787B22671EC4DF0500441231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CE53JYLS64;
+				INFOPLIST_FILE = "Raft Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ibrahim-Irfan.Raft-Project";
+				PRODUCT_NAME = "Tragic Heroes";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		787B22681EC4DF0500441231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CE53JYLS64;
+				INFOPLIST_FILE = "Raft Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ibrahim-Irfan.Raft-Project";
+				PRODUCT_NAME = "Tragic Heroes";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		787B226A1EC4DF0500441231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CE53JYLS64;
+				INFOPLIST_FILE = "Raft ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ibrahim-Irfan.Raft-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raft Project.app/Raft Project";
+			};
+			name = Debug;
+		};
+		787B226B1EC4DF0500441231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CE53JYLS64;
+				INFOPLIST_FILE = "Raft ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ibrahim-Irfan.Raft-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raft Project.app/Raft Project";
+			};
+			name = Release;
+		};
+		787B226D1EC4DF0500441231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = CE53JYLS64;
+				INFOPLIST_FILE = "Raft ProjectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ibrahim-Irfan.Raft-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Raft Project";
+			};
+			name = Debug;
+		};
+		787B226E1EC4DF0500441231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = CE53JYLS64;
+				INFOPLIST_FILE = "Raft ProjectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ibrahim-Irfan.Raft-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Raft Project";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		787B22331EC4DF0500441231 /* Build configuration list for PBXProject "Raft Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787B22641EC4DF0500441231 /* Debug */,
+				787B22651EC4DF0500441231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		787B22661EC4DF0500441231 /* Build configuration list for PBXNativeTarget "Raft Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787B22671EC4DF0500441231 /* Debug */,
+				787B22681EC4DF0500441231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		787B22691EC4DF0500441231 /* Build configuration list for PBXNativeTarget "Raft ProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787B226A1EC4DF0500441231 /* Debug */,
+				787B226B1EC4DF0500441231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		787B226C1EC4DF0500441231 /* Build configuration list for PBXNativeTarget "Raft ProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787B226D1EC4DF0500441231 /* Debug */,
+				787B226E1EC4DF0500441231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 787B22301EC4DF0500441231 /* Project object */;
+}
